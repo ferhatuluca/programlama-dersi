@@ -44,11 +44,14 @@ def power_recursive(m,n):
   elif(n==1):
     return m
   elif(n%2==0):
-    return power_recursive(m*m,int(n/2))
+    return power_recursive(m*m,(n//2))
   elif(n%2!=0):
-    return power_recursive(m*m,int(n/2))*m
+    return power_recursive(m*m,(n//2))*m
 
+  #---------------------------------------------------
+  #kuvvet almada recursive "binary search" mantığında çalıştıgı için daha hızlı.
+  #örnek olarak 3^4 için 9^2 ve 81^1 "i hesaplıyor.
 
-print(factoriyel(4))
+print(factoriyel(0))
 print(factoriyel_recursive(4))
-print(power_recursive(25,2))
+print(power_recursive(2,10))
