@@ -1,4 +1,4 @@
-/* Sözlük yapısı ile listedeki elemanların frekansını hesaplama. */
+""" Sözlük yapısı ile listedeki elemanların frekansını hesaplama. """
 
 def frequency_dict (liste) :
     freq_dict={}
@@ -10,7 +10,7 @@ def frequency_dict (liste) :
     return freq_dict
     
 
-/* Liste yapısı ile listedeki elemanların frekansını hesaplama. */
+""" Liste yapısı ile listedeki elemanların frekansını hesaplama. """
 
 def frequency_list (liste):
     freq_list = []
