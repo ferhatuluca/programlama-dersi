@@ -18,7 +18,7 @@ def frequency_list (liste):
         s = False
         for j in range (len(freq_list)):
             if list[i] == freq_list[j][0] :
-                freq_list[j][1] += 1
+                freq_liste[j][1] += 1
                 s = True
         if not s:
             freq_list.append([liste[i],1])
