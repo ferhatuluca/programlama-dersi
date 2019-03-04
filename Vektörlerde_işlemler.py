@@ -26,7 +26,7 @@ def Vectors_scalar_product(alpha,v):
 
 """ İki vektörün birbirinden çıkarılması. """
 
-def Vektors_substraction(v,w):
+def Vektors_Substraction(v,w):
   size=len(v)
   my_result=[]
   for i in range(size):
