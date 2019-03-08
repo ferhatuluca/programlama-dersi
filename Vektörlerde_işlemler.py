@@ -52,5 +52,5 @@ w=[8,3,5,7,6]
 alpha=8
 print(Vectors_Inner_Product(v,w))
 print(Vectors_scalar_product(alpha,v))
-print(Vektors_substraction(v,w))
+print(Vektors_Substraction(v,w))
 print(Vectors_Addition(v,w))
