@@ -19,6 +19,30 @@ def prime_numbers(x):
 print(prime_numbers(487))
 
 # ----------------------------------------------->
+
+""" N'e kadar olan asal sayıların ekrana yazdıran fonksiyon. """
+
+def asal(n):
+    listA = [2,3]
+    count = False
+    for i in range(5,n+1):
+        for j in listA:
+            if(j < i/2):      #Sayımızın yarısına kadar olan elemanlara bölünüyomu diye kontrol ediyoruz.
+                if(i % j == 0):
+                    count = True
+                    break
+                    
+        if(count == False):
+            listA.append(i)
+        else:
+            count = False
+
+    print(listA)
+
+asal(10000)
+
+# ----------------------------------------------->
+
 """ Bir listedeki ardışık n tane sayının toplamlarını bulan ve bu toplamlar arasından en büyüğü yazdıran fonksiyon."""
 
 def Ardışık_en_büyük(list):
