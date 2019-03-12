@@ -1,7 +1,7 @@
 """ Kendi çözümüm."""
 
 def bozukpara(n,clist):
-    mini = 5000       # Sınır değer
+    mini = 5000       # Sınır değer : her para biriminden 5000'den fazla kullanılamaz.
     list=[]
     while(n > 0):
         for i in range(len(clist)):
