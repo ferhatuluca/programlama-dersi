@@ -1,7 +1,7 @@
 """ Kendi çözümüm."""
 
 def bozukpara(n,clist):
-    mini = 51546354135        # Büyük bir sayı.
+    mini = 5000       # Sınır değer
     list=[]
     while(n > 0):
         for i in range(len(clist)):
@@ -11,7 +11,7 @@ def bozukpara(n,clist):
 
         list.append([mini,clist[index]])
         n = n - clist[index]*mini
-        mini = 464863153      # Büyük bir sayı.
+        mini = 5000     # Sınır değeri tekrar güncelliyoruz.
     print(list)
 
 """ Hocanın çözümü"""
