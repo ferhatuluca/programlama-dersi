@@ -1,3 +1,5 @@
+""" Alışveriş sonucu artan paranın en az kaç bozuklukla verileceğini hesaplayan fonksiyonlar. """
+
 """ Kendi çözümüm."""
 
 def bozukpara(n,clist):
@@ -38,3 +40,4 @@ def recMC(coinlist,change):
 coinlist=[1,5,10,25]
 bozukpara(40, coinlist)
 print(recMC(coinlist ,Change))
+print(knownResults)
