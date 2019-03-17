@@ -16,7 +16,10 @@ def bozukpara(n,clist):
 
 """ Hocanın çözümü"""
 
-def recMC(coinlist,change,knownResults):
+Change = 40
+knownResults = [0 for i in range(Change + 1)]  # Global knownResult listesi
+
+def recMC(coinlist,change):
     mincoin = change
     if(change in coinlist):
         knownResults[change] = 1
@@ -25,7 +28,7 @@ def recMC(coinlist,change,knownResults):
         return knownResults[change]
     else:
         for i in [c for c in coinlist if c <= change]:
-            numcoin = 1 + recMC(coinlist , change - i , knownResults)
+            numcoin = 1 + recMC(coinlist ,change - i)
             if numcoin < mincoin:
                 mincoin=numcoin
                 knownResults[change] = mincoin
@@ -34,4 +37,4 @@ def recMC(coinlist,change,knownResults):
 
 coinlist=[1,5,10,25]
 bozukpara(40, coinlist)
-print(recMC(coinlist,40,[0]*41))
+print(recMC(coinlist ,Change))
