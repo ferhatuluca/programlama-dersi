@@ -3,12 +3,12 @@
     doğrultularında arayıp olup olmadığını return eden bir fonksiyon."""
 
 import random
-def N_by_N_words(n):
+def N_by_N_words(n, kelimeler):
     liste = []
     for i in range(n):
         liste.append([])
         for j in range(n):
-            liste[i].append(random.choice(["a", "b", "c", "d", "e"]))
+            liste[i].append(random.choice(kelimeler))
     return liste
 
 
@@ -72,7 +72,8 @@ while(True):
     if toplam > 3:
         break
 """
-liste = N_by_N_words(5)
+word_list = ["a", "b", "c", "d", "e"]
+liste = N_by_N_words(5, word_list)
 donus = find_word_in_list(liste, "abc")
 print_list(liste)
 print("{} tane satirlarda, {} tane sütünlarda aradığımız kelime var.".format(donus[0], donus[1]))
